@@ -2,5 +2,6 @@
 
 let name = document.getElementById("fname");
 name.addEventListener("blur", ()=>{
-	this.value = this.value.toUpperCase();
+	let val = name.value;
+	name.value = val.toUpperCase();
 })
